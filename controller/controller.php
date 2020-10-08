@@ -11,6 +11,13 @@ class Controller {
         $this->model = new Model();
 
     } 
+
+    public function index()
+    {
+    
+      include 'view/index.php';     
+    }
+    
 	 public function invoke()
  {
   

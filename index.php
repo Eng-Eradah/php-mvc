@@ -19,8 +19,11 @@
 		{
 			$controller->restPass();
 		}
-		else{
+		else if($clean_url[1]=="login"){
 			$controller->invoke();
+		}
+		else{
+			$controller->index();
 		}
 
 
