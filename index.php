@@ -1,6 +1,6 @@
 
 <?php 
- include_once("controller/Controller.php");
+ /*include_once("app/controller/Controller.php");
 
  $controller = new Controller();
  $url=isset($_GET['url'])?$_GET['url']:"index";
@@ -24,9 +24,14 @@
 		}
 		else{
 			$controller->index();
-		}
+		}*/
 
-
- 
-
-?>
+		include("core/route.php");
+		include("core/controller.php");
+		//include("core/db.php");
+		//include("core/session.php");
+		include("core/view.php");
+		include("core/model.php");
+		$url=isset($_GET['url'])?$_GET['url']:"user";
+		new Route($url);
+		?>

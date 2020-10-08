@@ -1,9 +1,9 @@
 
 <?php
 
-include_once("model/model.php");
+include_once("app/model/userModel.php");
 
-class Model {
+class userModel extends Model {
 
  public function getlogin()
  {
